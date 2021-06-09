@@ -25,6 +25,8 @@ services:
             - ./symfony/:/var/www/symfony/
         networks:
             - symfony
+        links: 
+            - db
     nginx:
         build:
             context: .
